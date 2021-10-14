@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var nosotrosRouter = require('./routes/nosotros');
 var serviciosRouter = require('./routes/servicios');
 var contactoRouter = require('./routes/contacto');
+
 //var usersRouter = require('./routes/users');
 
 var app = express();
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/nosotros',nosotrosRouter);
 app.use('/servicios',serviciosRouter);
 app.use('/contacto',contactoRouter);
+
 
 app.get('/prueba', function(req, res, next){
  res.send('Pagina de prueba');
