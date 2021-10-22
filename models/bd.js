@@ -13,10 +13,6 @@ pool.query = util.promisify(pool.query);
 
 module.exports = pool;
 
-// var pool = require('./bd');
-// pool.query("select * from empleados").then(function(resultados){
-//     console.log(resultados);
 
-// });
 
 

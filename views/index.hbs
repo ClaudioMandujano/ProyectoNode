@@ -1,58 +1,54 @@
+ <!-- Navbar  -->
+    <nav class=" fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3">
+      <div class="container">        
+        <a class="navbar-brand" href="#">Playeras</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- Header -->
-	<header class="header trans_300">	
+        <div class="collapse navbar-collapse navbar_menu" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contacto</a>
+            </li>                             
+          </ul>       
+        </div>       
+      </div>
+    </nav>
+      
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-2">            
+          
+          <h1>DÍA DE LA MADRE</h1>
+             <h4>Estilo único. En la cancha, en el gimnasio o en casa</h4>
+        </div>
+    </div> 
 
-	   <!-- menu de navegación -->
-				<div class="main_nav_container">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 text-right">
-								<div class="logo_container">
-									<a href="#">Playeras <span>Shop</span></a>
-								</div>
-								<nav class="navbar">
-									<ul class="navbar_menu">
-										<li> <a href="#">Home</a></li>
-										<li> <a href="#">Shop</a></li>
-										<li> <a href="#">Outlet</a></li>										
-										<li> <a href="#">Blog</a></li>
-										<li> <a href="/contacto">Contacto</a></li>
-									</ul>
-									<ul class="navbar_user">
-										<li> <a href="#"><i class="fa fa-search" aria-hidden="true" ></i></a></li>
-										<li> <a href="#"><i class="fa fa-user" aria-hidden="true" ></i></a></li>
-										<li class="checkout">
-											<a href="#">
-												<li class="fa fa-shopping-cart" aria-hidden="true"></i>
-												<span id="checkout" class="checkout-items">2</span>												
-											</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>			
-	</header>
+{{!-- 
+ BANNER --}}
 
-		<!-- Slider -->
-		 <div class="main_slider" style="background-image: url(images/slider_1.jpg);">
-			<div class="container fill_hight">
-				<div class="row align-items-center fill_hight">
-					<div class="col">
-						<div class="main_slider_content">
-							<h6>Colección Primavera / Verano 2021</h6>
-							<h1>Aprovechá un 50% </h1>
-							<div class="red_button shop_now_button"><a href="#">Comprar AHORA!</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		 </div>
-
-		<!-- Banner -->
+ <!-- Banner -->
 		<div class="banner">
 			<div class="container">
 				<div class="row">
@@ -81,214 +77,37 @@
 			</div>
 		</div>
 
-		<!-- Novedades -->
-		 	<div class="new_arrivals">
-				 <div class="container">
 
-					 <div class="row">
-						<div class="col text-center">
-							<div class="section_title new_arrivals_title">
-								<h2>Novedades</h2>
-							</div>
-						</div>
-					 </div>
-								
-					 <div class="row align-items-center">
-						<div class="col text-center">
-							<div class="new_arrivals_sorting">
-								<ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
-									<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">All</li>
-									<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center " data-filter=".mujer">Mujer</li>
-									<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center " data-filter=".accesorios">Accesorios</li>
-									<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center " data-filter=".hombre">Hombre</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Login
+                        </button>
 
-					 <div class="row">
-						<div class="col">
-							<div class="product-grid" data-isotope='{"itemSelector": ".product-item","layoutMode": "fitRows"}'> 
-								
-								<!-- Inicio de lista de productos 1  -->   
-								<div class="product-item hombre">
-									<div class="product discount product_filter">
-										<div class="product_imagen">
-											<img src="images/product_1.png" alt="">
-										</div>
-										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-											<span>% 20</span>
-										</div>
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999<span>$ 79000</span></div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
+                       <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                  <div class="row" style="margin: 200px 0;">
+                                    <div class="col">
+                                      <form action="" method="">
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Usuario" name="usuario">
 
-								<!-- Inicio de lista de productos 2  -->   
-								<div class="product-item mujer">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_2.png" alt="">
-										</div>
-										<div class="favorite"></div>
-										<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
-											<span>Nuevo</span>
-										</div>
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999<span>$ 79000</span></div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 3  -->   
-								<div class="product-item mujer">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_3.png" alt="">
-										</div>
-										<div class="favorite"></div>										
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 4  -->   
-								<div class="product-item accesorios">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_4.png" alt="">
-										</div>
-										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-											<span>% 20	</span>
-										</div>
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 5  -->   
-								<div class="product-item hombre mujer">
-									<div class="product discount product_filter">
-										<div class="product_imagen">
-											<img src="images/product_5.png" alt="">
-										</div>
-										<div class="favorite"></div>
-										
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 6  -->   
-								<div class="product-item accesorios">
-									<div class="product discount product_filter">
-										<div class="product_imagen">
-											<img src="images/product_6.png" alt="">
-										</div>
-										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-											<span>-% 20</span>
-										</div>
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999<span>$ 79000</span></div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 7  -->   
-								<div class="product-item mujer">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_7.png" alt="">
-										</div>
-										<div class="favorite"></div>										
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 8  -->   
-								<div class="product-item accesorios">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_8.png" alt="">
-										</div>
-										<div class="favorite"></div>										
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 9  -->   
-								<div class="product-item hombre">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_9.png" alt="">
-										</div>
-										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-											<span>% 35</span>
-										</div>
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-								<!-- Inicio de lista de productos 10  -->   
-								<div class="product-item hombre">
-									<div class="product product_filter">
-										<div class="product_imagen">
-											<img src="images/product_10.png" alt="">
-										</div>
-										<div class="favorite"></div>										
-										<div class="product_info">
-											<h6 class="product_name"><a href="#">Hombre Slim Fit Casual</a></h6>
-											<div class="product_price">$ 9999</div>
-										</div>
-									</div>
-									<div class="red_button add_to_cart_button"><a href="#">COMPRAR AHORA</a></div>
-								</div>
-
-
-
-							</div>	<!-- Cierre de grilla-->
-																	
-						</div>
-					 </div>
-				 </div> <!-- Cierre container -->
-			 </div>
- 
-
-		<!-- Deal of the week -->
-		
-
-
-		<!-- Benefit -->
-		
-
-		<!-- Blogs -->
-		
-
-		<!-- Newsletter -->
-		
-
-		<!-- Footer -->
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="password" class="form-control" placeholder="Password" name="password">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>                           
+                          </div>
+                        </div>
+                      </div>
