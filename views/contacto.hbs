@@ -1,47 +1,32 @@
 
-<header class="header trans_300">	
-	   <!-- menu de navegación -->
-				<div class="main_nav_container" >
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 text-right">
-								<div class="logo_container">
-									<a href="#">Playeras <span>Shop</span></a>
-								</div>
-								<nav class="navbar">
-									<ul class="navbar_menu">
-										<li> <a href="/">Home</a></li>
-										<li> <a href="#">Shop</a></li>
-										<li> <a href="#">Outlet</a></li>										
-										<li> <a href="#">Blog</a></li>
-										<li> <a href="/contacto">Contacto</a></li>
-									</ul>
-									<ul class="navbar_user">
-										<li> <a href="#"><i class="fa fa-search" aria-hidden="true" ></i></a></li>
-										<li> <a href="#"><i class="fa fa-user" aria-hidden="true" ></i></a></li>
-										<li class="checkout">
-											<a href="#">
-												<li class="fa fa-shopping-cart" aria-hidden="true"></i>
-												<span id="checkout" class="checkout-items">2</span>												
-											</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>			
-	</header>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
+  
+   {{!-- 1 PARTE MAPA --}}
 
-  <div class="col-md-4 mt-4 mt-sm-0 container fluid">
-        <h2>Contactanos</h2>
-          <form method="POST" action="/contacto" class="flex-column flex-md-row">
-              <div class="form-row">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+         <div class="mapa">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.51012035904!2d-58.530758484234596!3d-34.69231136969924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8c90749cd63%3A0x286528aefb6921a5!2sGorriti%2012%2C%20B1766ESA%20La%20Tablada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1635707103045!5m2!1ses-419!2sar" width="100%" height="320" frameborder="0" style="border:0" allowfullscreenloading="lazy"></iframe>
+        </div>
+        </div>
+      </div>
+  </div>
+
+<div class="container" style="background-color: lightgray;">
+<div class="row mx-auto my-auto mt-5">
+  <div class="col-6 col-md-6 mt-4 mt-sm-0 ">
+      <h2>Contactanos</h2>
+      <p>There are many ways to contact us. </p>
+      <p>you may drop us a line, give us a call or send an email, choose what suits you the most.</p>
+      <p>(800) 686-6688</p>
+<p>info.deercreative@gmail.com</p>
+<p>mm</p>
+<p>Open hours: 8.00-18.00 Mon-Fri</p>
+<p>Sunday: Closed</p>
+  </div>
+  <div class="col-6 col-md-6 mt-4 mt-sm-0 ">
+        <h2>Formulario</h2>
+          <form method="POST" action="/contacto" class="flex-column flex-md-row">           
                 <div class="form-group col-md-6">
                       <label for="nombre">Nombre</label>
                       <input type="text" class="form-control" id="nombre" name="nombre" required> 
@@ -50,7 +35,6 @@
                     <label for="apellido">Apellido</label>
                     <input type="text" class="form-control" id="apellido" name="apellido" required>
                 </div>
-                <div class="row">
                 <div class="form-group col-md-6">
                   <label for="email">Email</label>
                   <input type="email" class="form-control" id="mail" name="email" placeholder="..." required>
@@ -59,16 +43,18 @@
                   <label for="tel">Tel</label>
                   <input type="text" class="form-control" id="tel"  name="telefono" placeholder="..." required>
                 </div>
-                <div class="form-group col-lg-12">
+                <div class="form-group col-lg-6">
                   <label for="mensaje">Mensaje</label>
-                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
                 </div>
-              </div>
+              
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
                
-              </div>
+             
           </form>
          <p>{{message}}</p> 
-     </div> 
+     </div>
+     </div>
+     </div>
