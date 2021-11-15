@@ -19,8 +19,12 @@ a,a:hover, a:active, a:link{
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;  
 }
+.nav-item a{
+  color: #ffffff !important;
+}
+
 .navbar_menu li{
-  display: inline-block;
+  display: inline-block;   
 }
 
 .navbar_menu li a{
@@ -34,7 +38,7 @@ a,a:hover, a:active, a:link{
   font-weight: bold;
 }
 .navbar-nav li a:hover{
-  color: #ff6347;
+  color: #fe4c50 !important;
 } 
 
 .hero{
@@ -87,7 +91,7 @@ a,a:hover, a:active, a:link{
 }
 
 .mapa{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .lista-novedades{
@@ -126,7 +130,58 @@ a,a:hover, a:active, a:link{
     margin-right: 1.4rem;
     opacity: 1;
 }
+/*MENU SERVICIOS*/
 
+.benefit{
+  margin-top: 74px;
+}
+
+.benefit_row{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.benefit_col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.benefit_item{
+  height: 100px;
+  background: #d1d0d0;
+  border-right: solid 1px #ffffff;
+  padding-left: 25px;
+}
+
+.benefit_col:last-child .benefit_item{
+  border-right: none;
+}
+
+.benefit_icon i{
+  font-size: 30px;
+  color: #fe4c50;
+}
+.benefit_content{
+  padding-left: 22px;
+}
+
+.benefit_content h6{
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.benefit_content p{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0px;
+  color: #51545f;
+}
+
+
+/*FIN SERVICIOS */
+/* MODAL  */
 #portfolio .portfolio-item {
     max-width: 26rem;
     margin-left: auto;
@@ -142,7 +197,7 @@ a,a:hover, a:active, a:link{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 200, 0, 0.9);
+    background: #fe4c50;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -194,6 +249,76 @@ a,a:hover, a:active, a:link{
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
+/*SUBSCRIPCION */
+.newsletter{
+  width: 100;
+  background: #d1d0d0;
+  margin-top: 81px;
+}
+
+.newsletter_text{
+  height: 120px;
+}
+
+.newsletter_text h4{
+  margin-bottom: 0px;
+  line-height: 24px;
+}
+
+.newsletter_text p{
+  margin-bottom: 0px;
+  line-height: 1.7;
+  color: #51545f;
+}
+
+.newsletter_form{
+  height: 120px;
+}
+
+#newsletter_email{
+  width: 300px;
+  height: 46px;
+  background: #ffffff;
+  border: none;
+  padding-left: 20px;
+}
+
+#newsletter_email:focus{
+  border: solid 1px #7f7f7f !important;
+  box-shadow:  none !important;
+}
+:focus{
+  outline: none !important;
+}
+
+#newsletter_email::-webkit-input-placeholder{
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #b9b4c7 !important;
+}
+
+#newsletter_email::input-placeholder{
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #b9b4c7 !important;
+}
+
+.newsletter_submit_btn{
+  width: 160px;
+  height: 46px;
+  border: none;
+  background: #fe4c50;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.newsletter_submit_btn:hover{
+  background: #fe7c7f;
+}
+ 
 
 /*FOOTER */
 .footer{
@@ -262,39 +387,3 @@ a,a:hover, a:active, a:link{
 
 
 
-
-
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}

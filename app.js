@@ -8,12 +8,15 @@ require('dotenv').config();
 
 //PAGINA PRIVADA
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
+
 var indexRouter = require('./routes/index');
 var nosotrosRouter = require('./routes/nosotros');
 var serviciosRouter = require('./routes/servicios');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+const { allowedNodeEnvironmentFlags } = require('process');
 
 
 //var usersRouter = require('./routes/users');
@@ -50,6 +53,11 @@ secured = async(req,res,next) =>{
     console.log(error);
   }
 }
+
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
 
 
 app.use('/', indexRouter);
